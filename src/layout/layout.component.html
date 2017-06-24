@@ -1,12 +1,16 @@
-<section layout="row" flex>
+<section layout-fill layout="row" flex>
 
     <md-sidenav class="md-sidenav-left" md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-md')"
+        md-is-locked-open="$mdMedia('gt-xs')"
         md-whiteframe="4">
+        <ouijan-sidebar></ouijan-sidebar>
     </md-sidenav>
 
-    <md-content flex layout-padding>
-      Content
-    </md-content>
+    <div layout-fill layout="column">
+    	<ouijan-toolbar sidebar-id="left"></ouijan-toolbar>
+	    <md-content flex layout-padding>
+	    	Content
+	    </md-content>
+    </div>
 
   </section>

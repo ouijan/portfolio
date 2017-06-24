@@ -1,0 +1,28 @@
+<div layout="column">
+
+    <div>Sidebar Logo</div>
+
+    <md-list flex>
+
+        <md-list-item class="md-2-line">
+          <img ng-src="{{vm.aboutImage.url}}" class="md-avatar" 
+            alt="{{vm.aboutImage.name}}" />
+          <div class="md-list-item-text">
+            <h3>About Me</h3>
+            <p>Secondary text</p>
+          </div>
+        </md-list-item>
+
+        <md-subheader class="md-no-sticky">My Projects</md-subheader>
+
+         <md-list-item class="md-2-line" ng-repeat="project in vm.projectList">
+          <img ng-src="{{project.icon.url}}" class="md-avatar" 
+            alt="{{project.icon.name}}" />
+          <div class="md-list-item-text">
+            <h3 ng-bind="project.name"></h3>
+            <p ng-bind="project.description" md-truncate></p>
+          </div>
+        </md-list-item>
+
+    </md-list>
+</div>

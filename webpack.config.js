@@ -41,12 +41,15 @@ var sassLoader = {
 var babelLoader = {
   test: /\.js$/,
   exclude: /(node_modules|bower_components)/,
-  use: [{
-    loader: 'babel-loader',
-    options: {
-      presets: ['env']
+  use: [
+    { loader: 'ng-annotate-loader' },
+    { 
+      loader: 'babel-loader',
+      options: {
+        presets: ['env']
+      }
     }
-  }]
+  ]
 };
 
 /**
@@ -63,9 +66,7 @@ var templateLoader = {
         prefix: 'ouijan/'
       }
     },
-    {
-      loader: 'html-loader',
-    }
+    { loader: 'html-loader' }
   ],
  };
 

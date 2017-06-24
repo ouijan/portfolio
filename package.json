@@ -6,7 +6,10 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack",
     "watch": "./node_modules/.bin/webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t ouijan_portfolio:latest .",
+    "docker:deploy": "docker run -d -p 8081:80 ouijan_portfolio:latest",
+    "docker:dev": "docker run -d -v $(pwd):/usr/share/nginx/html -p 8081:80 ouijan_portfolio:latest"
   },
   "author": "Toby Harris",
   "license": "MIT",
@@ -23,6 +26,7 @@
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "html-loader": "^0.4.5",
+    "ng-annotate-loader": "^0.6.1",
     "ngtemplate-loader": "^2.0.1",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
