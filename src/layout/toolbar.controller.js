@@ -8,7 +8,7 @@ export default class ToolbarController {
 		this.$mdSidenav = $mdSidenav;
 
 		this.sidebar = undefined;
-		this.logo = new Image('logo only.svg');
+		this.logo = new Image('logo.svg');
 	}
 
 	$onInit() {

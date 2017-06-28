@@ -11,7 +11,8 @@
 
     <md-list style="padding: 0;">
 
-        <md-list-item class="md-2-line" ui-sref="about" aria-label="About Me">
+        <md-list-item class="md-2-line" aria-label="About Me"
+          ng-click="vm.goTo('about')">
           <img ng-src="{{vm.aboutImage.url}}" class="md-avatar" 
             alt="{{vm.aboutImage.name}}" />
           <div class="md-list-item-text">
@@ -26,9 +27,9 @@
         </md-subheader>
 
         <md-list-item class="md-2-line" ng-repeat="project in vm.projectList"
-          ui-sref="projects({ slug: project.slug })"
+          ng-click="vm.goTo('projects', {slug: project.slug})" 
           aria-label="{{project.name}} Project">
-
+          
           <img ng-src="{{project.icon.url}}" class="md-avatar" 
             alt="{{project.icon.name}}" />
           <div class="md-list-item-text">

@@ -8,11 +8,11 @@
 - Run `npm run docker:dev` to deploy the container with the current directory mounted
 
 # To Do
-- Remove Hair from Icon & Refine
-- Close sidebar when clicked on mobile
-- Images Media/Carousel
+- Comments & Code Cleanup
 
 # Ideas
+- Left Sidebar Service
+- Images Cards & Media/Carousel
 - Github Link
 - Code Snippets
 - Make projects async (ready for http api)

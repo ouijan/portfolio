@@ -6,8 +6,4 @@ export default class ProjectDetailsController {
 		// ...
 	}
 
-	$onInit() {
-		console.log(this);
-	}
-
 }
