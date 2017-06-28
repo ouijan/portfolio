@@ -1,4 +1,4 @@
-import ProjectStatuses from './project-statuses.js';
+import ProjectStatuses from './project_statuses';
 
 let yoforia = {
 	"name": "Yoforia",

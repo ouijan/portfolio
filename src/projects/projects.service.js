@@ -7,6 +7,15 @@ export default class Projects {
 		this.ProjectFactory = ProjectFactory;
 	}
 
+	getBySlug(slug) {
+		for (var i = ProjectsData.length - 1; i >= 0; i--) {
+			let data = ProjectsData[i];
+			if (data.slug === slug) {
+				return this.ProjectFactory.make(data);
+			}
+		}
+	}
+
 	all(resolve = () => {}) {
 		let projects = [];
 

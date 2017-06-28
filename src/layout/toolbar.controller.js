@@ -1,3 +1,4 @@
+import Image from './../images/image';
 
 export default class ToolbarController {
   
@@ -7,6 +8,7 @@ export default class ToolbarController {
 		this.$mdSidenav = $mdSidenav;
 
 		this.sidebar = undefined;
+		this.logo = new Image('logo only.svg');
 	}
 
 	$onInit() {

@@ -1,0 +1,18 @@
+<div layout="column" layout-margin layout-padding>
+
+	<h1 class="md-display-3" ng-bind="vm.project.name"></h1>
+
+	<div layout="row" layout-wrap>
+		<div flex="100" flex-gt-xs="50" class="md-body-1" 
+			ng-bind-html="vm.project.description | trustedHtml"></div>
+		<img flex="100" flex-gt-xs="50"
+			ng-src="{{vm.project.icon.url}}" alt="{{vm.project.icon.name}}" />
+	</div>
+
+	<div layout="row" layout-wrap>
+		<div ng-repeat="image in vm.project.images" flex="100" flex-gt-xs="50">
+			<img ng-src="{{image.url}}" alt="{{image.name}}" />
+		</div>
+	</div>
+
+</div>

@@ -1,9 +1,18 @@
-h1,
-h2,
-h3 {
-  color: $purple;
+%pacifico-font {
   font-family: Pacifico;
   font-style: normal;
   font-variant: normal;
-  margin-top: 0;
+}
+
+.md-display-4,
+.md-display-3 {
+  @extend %pacifico-font;
+  color: $purple-500;
+}
+
+.md-display-2,
+.md-display-1,
+.md-headline,
+.md-title {
+  @extend %pacifico-font;
 }

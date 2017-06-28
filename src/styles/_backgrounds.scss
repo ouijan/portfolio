@@ -4,14 +4,28 @@
   background-repeat: repeat;
 }
 
+.bg-swirl {
+  @extend %bg-swirl;
+}
+
 %bg-shards-purple {
   background-color: $white;
   background-image: url('/assets/images/bg-shards-purple.png');
   background-repeat: repeat;
+  background-size: cover;
+}
+
+.bg-shards-purple {
+  @extend %bg-shards-purple
 }
 
 %bg-shards-white {
   background-color: $white;
   background-image: url('/assets/images/bg-shards.png');
   background-repeat: repeat;
+  background-size: cover;
+}
+
+.bg-shards-white {
+  @extend %bg-shards-white;
 }

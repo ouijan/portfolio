@@ -8,6 +8,7 @@ export default class SidebarController {
 
 		this.projectList = [];
 		this.aboutImage = new Image('profile.png');
+		this.logo = new Image('logo only.svg');
 	}
 
 	$onInit() {
