@@ -12,6 +12,11 @@ export default class SidebarController {
 		this.projectList = [];
 		this.aboutImage = new Image('profile.png');
 		this.logo = new Image('logo.svg');
+
+		this.contact = {
+			email: "tobyharris93@gmail.com",
+			phone: "0400303037",
+		};
 	}
 
 	$onInit() {

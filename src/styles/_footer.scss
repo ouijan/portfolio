@@ -1,0 +1,6 @@
+footer {
+  &.ouijan-footer {
+    @extend %bg-shards-purple;
+    min-height: 48px;
+  }
+}

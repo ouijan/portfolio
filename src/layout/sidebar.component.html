@@ -1,45 +1,70 @@
 <div layout-fill layout="column">
 
 
-  <header layout="column" layout-align="center center"
-    md-whiteframe="5" class="ouijan-header bg-shards-purple">
-    <img class="logo" alt="{{vm.logo.name}}" ng-src="{{vm.logo.url}}" />
-    <h1 class="md-display-1">Toby Harris</h1>
+  <header layout="column" md-whiteframe="5" class="ouijan-header">
+
+    <div class="md-padding" layout="column" layout-align="center center">
+      <img class="logo" alt="{{vm.logo.name}}" ng-src="{{vm.logo.url}}" />
+      <h1 class="md-display-1">Toby Harris</h1>
+    </div>
+
+    <md-divider></md-divider>
+
+    <div class="md-padding" layout="column" layout-align="center center">
+      <h2 class="md-subhead">Digital Design</h2>
+      <h2 class="md-subhead">Software Development</h2>
+    </div>
   </header>
 
-  <md-content flex>
+  <md-content flex layout="column">
+      <md-list class="md-dense" style="padding: 0;">
 
-    <md-list style="padding: 0;">
+          <md-list-item class="md-2-line" aria-label="About Me"
+            ng-click="vm.goTo('about')">
+            <img ng-src="{{vm.aboutImage.url}}" class="md-avatar" 
+              alt="{{vm.aboutImage.name}}" />
+            <div class="md-list-item-text">
+              <h3>About Me</h3>
+              <!-- <p>Secondary text</p> -->
+            </div>
+          </md-list-item>
 
-        <md-list-item class="md-2-line" aria-label="About Me"
-          ng-click="vm.goTo('about')">
-          <img ng-src="{{vm.aboutImage.url}}" class="md-avatar" 
-            alt="{{vm.aboutImage.name}}" />
-          <div class="md-list-item-text">
-            <h3>About Me</h3>
-            <!-- <p>Secondary text</p> -->
-          </div>
-        </md-list-item>
+          <md-subheader class="md-no-sticky bg-shards-purple"
+            md-colors="::{backgroundColor: 'default-primary-500'}">
+              My Projects
+          </md-subheader>
 
-        <md-subheader class="md-no-sticky"
-          md-colors="::{backgroundColor: 'default-primary-500'}">
-            My Projects
-        </md-subheader>
+          <md-list-item class="md-2-line" ng-repeat="project in vm.projectList"
+            ng-click="vm.goTo('projects', {slug: project.slug})" 
+            aria-label="{{project.name}} Project">
+            
+            <img ng-src="{{project.icon.url}}" class="md-avatar" 
+              alt="{{project.icon.name}}" />
+            <div class="md-list-item-text">
+              <h3 ng-bind="project.name"></h3>
+              <!-- <p ng-bind="project.description" md-truncate></p> -->
+            </div>
+            
+          </md-list-item>
 
-        <md-list-item class="md-2-line" ng-repeat="project in vm.projectList"
-          ng-click="vm.goTo('projects', {slug: project.slug})" 
-          aria-label="{{project.name}} Project">
-          
-          <img ng-src="{{project.icon.url}}" class="md-avatar" 
-            alt="{{project.icon.name}}" />
-          <div class="md-list-item-text">
-            <h3 ng-bind="project.name"></h3>
-            <!-- <p ng-bind="project.description" md-truncate></p> -->
-          </div>
-          
-        </md-list-item>
+      </md-list>
 
-    </md-list>
+      <span flex></span>
 
+      <footer layout="row" layout-align="center center" class="ouijan-footer">
+        <div>
+          <a href="tel:{{ vm.contact.phone }}" class="md-icon-button" 
+            aria-label="Call me maybe">
+            <md-tooltip md-direction="top">Call me maybe {{ vm.contact.phone }}?</md-tooltip>
+            <md-icon>phone</md-icon>
+          </a>
+          <a href="mailto:{{ vm.contact.email }}" class="md-button md-icon-button" 
+            aria-label="Email me maybe">
+            <md-tooltip md-direction="top">Email me maybe {{ vm.contact.email }}?</md-tooltip>
+            <md-icon>email</md-icon>
+          </a>
+        </div>
+      </footer>
+    
   </md-content>
 </div>
