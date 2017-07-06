@@ -1,4 +1,5 @@
 # Ouijan Portfolio
+- [Docker Image](https://hub.docker.com/r/ouijan/portfolio/)
 
 ## Development
 - Run `npm run build` to build
@@ -20,7 +21,7 @@
 - Add more projects
 
 ### References
-[AngularJS](https://angularjs.org/)
-[Angular Material](https://material.angularjs.org)
-[UI Router](https://ui-router.github.io/ng1/docs/latest/)
-[Docker](https://www.docker.com/)
+- [AngularJS](https://angularjs.org/)
+- [Angular Material](https://material.angularjs.org)
+- [UI Router](https://ui-router.github.io/ng1/docs/latest/)
+- [Docker](https://www.docker.com/)

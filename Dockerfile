@@ -12,6 +12,8 @@ COPY . /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 
 # Build App
-# CMD rm -rf node_modules && \
-# 	npm install && \
-# 	npm run build
+CMD rm -rf node_modules && \
+	npm install && \
+	npm run build
+
+CMD chown -R nginx:nginx /usr/share/nginx/html
