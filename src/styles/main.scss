@@ -9,7 +9,13 @@
 
 .ouijan-content {
   @extend %bg-swirl;
+  min-height: 100%;
   padding: 1px;
+}
+
+html,
+body {
+  @extend %bg-swirl;
 }
 
 .wrap {
