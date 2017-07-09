@@ -1,8 +1,9 @@
-$divider-color: rgba(0,0,0,0.30);
+$divider-color: rgba(0, 0, 0, .3);
 
 header {
   &.ouijan-header {
     @extend %bg-shards-purple;
+    border-bottom: 1px solid $divider-color;
     z-index: 1;
 
     .logo {
@@ -19,10 +20,6 @@ header {
       color: $white-dim;
       font-weight: 600;
       margin: 0;
-    }
-
-    md-divider {
-      border-top-color: $divider-color;
     }
 
   }

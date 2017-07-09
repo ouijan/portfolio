@@ -1,8 +1,12 @@
-<md-toolbar class="ouijan-toolbar bg-shards-purple"
-	ng-click="vm.sidebar.open()">
+<md-toolbar class="ouijan-toolbar bg-shards-purple">
   <div class="md-toolbar-tools">
 
-    <img class="logo" src="{{ vm.logo.url }}">
+  	<md-button class="md-icon-button menu-icon" aria-label="Menu" 
+  		ng-click="vm.sidebar.open()">
+      <md-icon>menu</md-icon>
+    </md-button>
+
+    <!-- <img class="logo" src="{{ vm.logo.url }}"> -->
     <h2 flex md-truncate class="md-display-1">Toby Harris</h2>
 
   </div>

@@ -3,7 +3,7 @@ import './styles/main.scss';
 
 import angular from 'angular';
 import ngMaterial from 'angular-material';
-import uirouter from 'angular-ui-router';
+import uirouter from '@uirouter/angularjs';
 
 import routes from './routes';
 import pallettes from './pallettes';
@@ -27,7 +27,11 @@ app.config(($mdThemingProvider) => {
 		$mdThemingProvider.definePalette(name, config);
 	});
 	$mdThemingProvider.theme('default').primaryPalette('purple');
-	$mdThemingProvider.enableBrowserColor();
+	$mdThemingProvider.enableBrowserColor({
+    theme: 'default',
+    palette: 'primary',
+    hue: '800'
+  });
 });
 
 // Configure Routes

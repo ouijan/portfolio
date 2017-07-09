@@ -2,7 +2,7 @@ FROM nginx
 
 # Install Curl
 RUN apt-get update && \
-	apt-get install -y curl
+	apt-get install -y curl gnupg2
 
 # Install Node & NPM
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash && \
@@ -12,8 +12,8 @@ COPY . /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 
 # Build App
-CMD rm -rf node_modules && \
+RUN rm -rf node_modules && \
 	npm install && \
 	npm run build
 
-CMD chown -R nginx:nginx /usr/share/nginx/html
+RUN chown -R nginx:nginx /usr/share/nginx/html

@@ -1,22 +1,18 @@
 <div layout-fill layout="column">
 
 
-  <header layout="column" md-whiteframe="5" class="ouijan-header">
-
-    <div class="md-padding" layout="column" layout-align="center center">
-      <img class="logo" alt="{{vm.logo.name}}" ng-src="{{vm.logo.url}}" />
-      <h1 class="md-display-1">Toby Harris</h1>
-    </div>
-
-    <md-divider></md-divider>
-
-    <div class="md-padding" layout="column" layout-align="center center">
-      <h2 class="md-subhead">Digital Design</h2>
-      <h2 class="md-subhead">Software Development</h2>
-    </div>
+  <header layout="column" layout-align="center center" class="md-padding ouijan-header">
+    <img class="logo" alt="{{vm.logo.name}}" ng-src="{{vm.logo.url}}" />
+    <h1 class="md-display-1">Toby Harris</h1>
   </header>
 
   <md-content flex layout="column">
+
+      <div class="md-padding job-titles">
+        <h2 class="md-subhead">Digital Design</h2>
+        <h2 class="md-subhead">Software Development</h2>
+      </div>
+
       <md-list class="md-dense" style="padding: 0;">
 
           <md-list-item class="md-2-line" aria-label="About Me"
@@ -46,6 +42,8 @@
             </div>
             
           </md-list-item>
+
+         
 
       </md-list>
 

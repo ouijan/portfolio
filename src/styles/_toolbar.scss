@@ -1,17 +1,15 @@
 md-toolbar {
   &.ouijan-toolbar {
     @extend %bg-shards-purple;
-    
+
     h1,
     h2,
     h3 {
       text-align: center;
     }
 
-    .logo {
-      height: 35px;
+    .menu-icon {
       position: absolute;
     }
-
   }
 }

@@ -7,8 +7,27 @@
 @import 'header';
 @import 'footer';
 
+.ouijan-content {
+  @extend %bg-swirl;
+  padding: 1px;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
+}
+
+.job-titles {
+  @extend %bg-shards-purple;
+  padding: 16px;
+  z-index: 1;
+
+  h1,
+  h2,
+  h3 {
+    color: $white-dim;
+    margin: 0;
+    text-align: center;
+  }
 }

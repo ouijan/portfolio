@@ -10,6 +10,10 @@
 
 ## To Do
 - Comments & Code Cleanup
+- Favicon
+- Analytics
+- Metadata
+- SSL Certificate
 
 ## Ideas
 - Splash section on 'about me'

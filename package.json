@@ -1,6 +1,6 @@
 {
   "name": "ouijan_portfolio",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "portfolio frontend",
   "main": "dist/package.js",
   "scripts": {
@@ -15,9 +15,10 @@
   "author": "Toby Harris",
   "license": "MIT",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.5",
     "angular": "^1.6.4",
     "angular-material": "^1.1.4",
-    "angular-ui-router": "^1.0.3"
+    "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
     "angular-animate": "^1.6.4",
