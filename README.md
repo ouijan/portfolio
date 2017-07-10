@@ -10,12 +10,12 @@
 
 ## To Do
 - Comments & Code Cleanup
-- SSL Certificate
+- Images Cards & Media/Carousel
 
 ## Ideas
+- SSL Certificate
 - Splash section on 'about me'
 - Left Sidebar Service
-- Images Cards & Media/Carousel
 - Github Link
 - Code Snippets
 - Make projects async (ready for http api)
