@@ -10,9 +10,6 @@
 
 ## To Do
 - Comments & Code Cleanup
-- Favicon
-- Analytics
-- Metadata
 - SSL Certificate
 
 ## Ideas

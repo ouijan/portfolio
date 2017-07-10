@@ -10,17 +10,12 @@
 .ouijan-content {
   @extend %bg-swirl;
   min-height: 100%;
-  padding: 1px;
-}
-
-html,
-body {
-  @extend %bg-swirl;
 }
 
 .wrap {
   margin: 0 auto;
   max-width: 900px;
+  padding: 1px 0;
   width: 100%;
 }
 

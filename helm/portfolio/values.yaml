@@ -1,2 +1,2 @@
-replicaCount: 1
-containerTag: 1.0.2
+replicaCount: 2
+containerTag: 1.0.5

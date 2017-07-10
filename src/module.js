@@ -4,6 +4,8 @@ import './styles/main.scss';
 import angular from 'angular';
 import ngMaterial from 'angular-material';
 import uirouter from '@uirouter/angularjs';
+import angulartics from 'angulartics';
+import angularticsGa from 'angulartics-google-analytics';
 
 import routes from './routes';
 import pallettes from './pallettes';
@@ -15,6 +17,8 @@ import about from './about/about.module';
 let app = angular.module('ouijan', [
 	ngMaterial,
 	uirouter,
+	angulartics,
+	angularticsGa,
 	layout,
 	projects,
 	filters,
