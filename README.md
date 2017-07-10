@@ -16,7 +16,6 @@
 - SSL Certificate
 - Splash section on 'about me'
 - Left Sidebar Service
-- Github Link
 - Code Snippets
 - Make projects async (ready for http api)
 - Add more projects
