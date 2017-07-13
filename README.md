@@ -10,7 +10,6 @@
 
 ## To Do
 - Comments & Code Cleanup
-- Images Cards & Media/Carousel
 - SSL Certificate
 - Splash section on 'about me'
 - Left Sidebar Service
