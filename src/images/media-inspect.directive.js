@@ -1,32 +1,12 @@
-// import templateUrl from './media-inspect.component.html';
-// import controller from './media-inspect.controller';
+import MediaInspector from './media_inspector';
 
 /* @ngInject */
-export default (Lightbox) => {
+export default ($mdDialog) => {
 	return {
 		restrict: 'A',
 		link: (scope, iElement, iAttrs, controller, transcludeFn) => {
-			let inspector = new MediaInspector(iElement, Lightbox);
+			let inspector = new MediaInspector(iElement, $mdDialog);
 			inspector.registerOnClick();
 		}
 	};
 };
-
-class MediaInspector {
-
-	constructor(elem, Lightbox) {
-		this.lightbox = Lightbox;
-		this.elem = elem;
-	}
-
-	registerOnClick() {
-		this.elem.on('click', () => {
-			this.onClick();
-		});
-	}
-
-	onClick() {
-		this.lightbox.open(this.elem);
-	}
-
-}

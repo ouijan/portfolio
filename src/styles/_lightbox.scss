@@ -1,24 +1,8 @@
-*[media-inspect] {
+[media-inspect] {
   cursor: zoom-in;
 }
 
-.ouijan-lightbox {
-  align-items: center;
-  background-color: $background-fade;
-  bottom: 0;
-  cursor: zoom-out;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 100;
-
-  .lightbox-inner {
-    max-width: 90%;
-    *[media-inspect] {
-      cursor: zoom-out;
-    }
-  }
+.lightbox {
+  max-height: 95%;
+  max-width: 95%;
 }
