@@ -1,2 +1,9 @@
 replicaCount: 2
 containerTag: 1.0.5
+
+
+tls:
+  cert: |
+    Cert
+  key: |
+    Key
