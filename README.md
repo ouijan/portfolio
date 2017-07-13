@@ -11,8 +11,6 @@
 ## To Do
 - Comments & Code Cleanup
 - Images Cards & Media/Carousel
-
-## Ideas
 - SSL Certificate
 - Splash section on 'about me'
 - Left Sidebar Service
