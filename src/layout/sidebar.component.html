@@ -51,15 +51,20 @@
 
       <footer layout="row" layout-align="center center" class="ouijan-footer">
         <div>
-          <a href="tel:{{ vm.contact.phone }}" class="md-icon-button" 
+          <a href="tel:{{ vm.contact.phone }}" class="md-button md-icon-button" 
             aria-label="Call me maybe">
             <md-tooltip md-direction="top">Call me maybe {{ vm.contact.phone }}?</md-tooltip>
             <md-icon>phone</md-icon>
           </a>
           <a href="mailto:{{ vm.contact.email }}" class="md-button md-icon-button" 
             aria-label="Email me maybe">
-            <md-tooltip md-direction="top">Email me maybe {{ vm.contact.email }}?</md-tooltip>
+            <md-tooltip md-direction="top">{{ vm.contact.email }}</md-tooltip>
             <md-icon>email</md-icon>
+          </a>
+          <a href="https://github.com/Ouijan" target="_blank" 
+            class="md-button md-icon-button" aria-label="Github">
+            <md-tooltip md-direction="top">Github</md-tooltip>
+            <md-icon md-svg-src="assets/images/github.svg"></md-icon>
           </a>
         </div>
       </footer>

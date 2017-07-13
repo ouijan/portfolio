@@ -6,15 +6,18 @@
 @import 'toolbar';
 @import 'header';
 @import 'footer';
+@import 'lightbox';
+@import 'projects';
 
 .ouijan-content {
   @extend %bg-swirl;
-  padding: 1px;
+  min-height: 100%;
 }
 
 .wrap {
   margin: 0 auto;
   max-width: 900px;
+  padding: 1px 0;
   width: 100%;
 }
 

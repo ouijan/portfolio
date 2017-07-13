@@ -10,16 +10,9 @@
 
 ## To Do
 - Comments & Code Cleanup
-- Favicon
-- Analytics
-- Metadata
 - SSL Certificate
-
-## Ideas
 - Splash section on 'about me'
 - Left Sidebar Service
-- Images Cards & Media/Carousel
-- Github Link
 - Code Snippets
 - Make projects async (ready for http api)
 - Add more projects
