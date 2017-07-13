@@ -1,8 +1,17 @@
-[media-inspect] {
+[lightbox] {
   cursor: zoom-in;
 }
 
 .lightbox {
+  border-radius: 0;
   max-height: 95%;
   max-width: 95%;
+
+  .md-icon-button {
+    margin: 0;
+    opacity: .25;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }

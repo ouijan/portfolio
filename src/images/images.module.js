@@ -1,7 +1,7 @@
 import angular from 'angular';
 
-import MediaInspect from './media-inspect.directive';
+import LightboxDirective from './lightbox.directive';
 
 export default angular.module('ouijan.images', [])
-	.directive('mediaInspect', MediaInspect)
+	.directive('lightbox', LightboxDirective)
 	.name;
