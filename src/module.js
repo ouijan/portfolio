@@ -13,6 +13,7 @@ import layout from './layout/layout.module';
 import projects from './projects/projects.module';
 import filters from './filters/filters.module';
 import about from './about/about.module';
+import images from './images/images.module';
 
 let app = angular.module('ouijan', [
 	ngMaterial,
@@ -23,6 +24,7 @@ let app = angular.module('ouijan', [
 	projects,
 	filters,
 	about,
+	images,
 ]);
 	
 // Configure Theme
