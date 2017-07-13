@@ -1,4 +1,4 @@
 name: portfolio
 apiVersion: v1
 description: A Helm chart for portfolio by Toby Harris 
-version: 1.0.5
+version: 1.1.0
