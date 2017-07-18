@@ -19,16 +19,30 @@ export default class SidebarController {
 		};
 	}
 
+	/**
+	 * Run on init
+	 * @return {void}
+	 */
 	$onInit() {
 		this.loadProjects();
 		this.sidebar = this.$mdSidenav(this.sidebarId, true);	
 	}
 
+	/**
+	 * Load projects for display
+	 * @return {void}
+	 */
 	loadProjects() {
 		this.Projects.all((projects) => 
 			this.projectList = projects);
 	}
 
+	/**
+	 * Go to a project view
+	 * @param  {string} state
+	 * @param  {Object} params
+	 * @return {void}
+	 */
 	goTo(state, params = {}) {
 		this.sidebar.close();
 		this.$state.go(state, params);

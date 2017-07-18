@@ -7,12 +7,20 @@ export default class Lightbox {
 		this.triggerAttr = 'lightbox';
 	}
 
+	/**
+	 * Run on Init
+	 * @return {void}
+	 */
 	$onInit() {
 		this.elem.on('click', () => {
-			this.onClick();
+			this.showLightbox();
 		});
 	}
 
+	/**
+	 * Get the template for lightbox dialog
+	 * @return {string}
+	 */
 	getDialogTemplate() {
 		let clone = this.elem.clone();
 		clone.removeAttr(this.triggerAttr);
@@ -30,7 +38,11 @@ export default class Lightbox {
 		`;
 	}
 
-	onClick() {
+	/**
+	 * Show Lightbox Dialog
+	 * @return {void}
+	 */
+	showLightbox() {
 		this.$mdDialog.show({
 			template: this.getDialogTemplate(),
 			controllerAs: 'vm',

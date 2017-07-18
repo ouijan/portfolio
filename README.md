@@ -9,7 +9,6 @@
 - Run `npm run docker:dev` to deploy the container with the current directory mounted
 
 ## To Do
-- Comments & Code Cleanup
 - SSL Certificate
 - Splash section on 'about me'
 - Left Sidebar Service

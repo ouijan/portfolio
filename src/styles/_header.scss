@@ -12,6 +12,7 @@ header {
     }
 
     h1 {
+      @extend %pacifico-font;
       color: $white-dim;
       margin: 0 0 30px;
     }

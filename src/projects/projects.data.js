@@ -1,5 +1,8 @@
 import ProjectStatuses from './project_statuses';
 
+/**
+ *  YOFORIA
+ */
 let yoforia = {
 	"name": "Yoforia",
 	"slug": "yoforia",
@@ -29,7 +32,9 @@ let yoforia = {
 	],
 };
 
-
+/**
+ *  TRACE
+ */
 let trace = {
 	"name": 'Trace',
 	"slug": "trace",
@@ -59,6 +64,9 @@ let trace = {
 	],
 };
 
+/**
+ *  EXPORT
+ */
 export default [
 	yoforia,
 	trace,

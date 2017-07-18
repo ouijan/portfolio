@@ -1,12 +1,17 @@
-<div layout="column" layout-margin layout-padding class="project-details">
+<div layout="column" layout-margin class="project-details">
 
-	<h1 class="md-display-3" ng-bind="vm.project.name"></h1>
-
+	<div>
+		<h1 class="md-display-3" ng-bind="vm.project.name"></h1>
+	</div>
+	
 	<div layout="row" layout-wrap>
 		<div flex="100" flex-gt-xs="50" class="md-body-1" 
 			ng-bind-html="vm.project.description | trustedHtml"></div>
-		<img flex="100" flex-gt-xs="50"
-			ng-src="{{vm.project.icon.url}}" alt="{{vm.project.icon.name}}" />
+			<div flex="100" flex-gt-xs="50">
+				<img class="project-icon"
+					ng-src="{{vm.project.icon.url}}" 
+					alt="{{vm.project.icon.name}}" />
+			</div>
 	</div>
 
 	<div layout="row" layout-wrap>

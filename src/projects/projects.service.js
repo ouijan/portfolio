@@ -7,6 +7,11 @@ export default class Projects {
 		this.ProjectFactory = ProjectFactory;
 	}
 
+	/**
+	 * Get a project by slug
+	 * @param  {string} slug
+	 * @return {Project}
+	 */
 	getBySlug(slug) {
 		for (var i = ProjectsData.length - 1; i >= 0; i--) {
 			let data = ProjectsData[i];
@@ -16,6 +21,11 @@ export default class Projects {
 		}
 	}
 
+	/**
+	 * Get all Projects
+	 * @param  {Function} resolve
+	 * @return {void}
+	 */
 	all(resolve = () => {}) {
 		let projects = [];
 
