@@ -10,11 +10,12 @@ let projects = {
   url: '/projects/:slug',
   component: 'projectDetails',
   resolve: {
-  	project: ($stateParams, Projects) => Projects.getBySlug($stateParams.slug)
+    project: ($stateParams, Projects) => 
+      Projects.get({ slug: $stateParams.slug }).$promise,
   }
 };
 
 export default [
-	about,
-	projects,
+  about,
+  projects,
 ];

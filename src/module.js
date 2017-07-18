@@ -3,6 +3,7 @@ import './styles/main.scss';
 
 import angular from 'angular';
 import ngMaterial from 'angular-material';
+import ngResource from 'angular-resource';
 import uirouter from '@uirouter/angularjs';
 import angulartics from 'angulartics';
 import angularticsGa from 'angulartics-google-analytics';
@@ -17,6 +18,7 @@ import images from './images/images.module';
 
 let app = angular.module('ouijan', [
 	ngMaterial,
+	ngResource,
 	uirouter,
 	angulartics,
 	angularticsGa,

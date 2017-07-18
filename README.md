@@ -13,8 +13,8 @@
 - Splash section on 'about me'
 - Left Sidebar Service
 - Code Snippets
-- Make projects async (ready for http api)
 - Add more projects
+- Add Loading Icons
 
 ### References
 - [AngularJS](https://angularjs.org/)

@@ -5,7 +5,7 @@ export default class SidebarController {
   /* @ngInject */
 	constructor(Projects, $state, $mdSidenav) {
 		this.Projects = Projects;
-		this.$state = $state;		
+		this.$state = $state;
 		this.$mdSidenav = $mdSidenav;
 
 		this.sidebar = undefined;
@@ -33,8 +33,7 @@ export default class SidebarController {
 	 * @return {void}
 	 */
 	loadProjects() {
-		this.Projects.all((projects) => 
-			this.projectList = projects);
+		this.Projects.query((projects) => this.projectList = projects);
 	}
 
 	/**

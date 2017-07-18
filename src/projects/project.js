@@ -7,9 +7,10 @@ export default class Project {
 		angular.merge(this, data);
 		
 		this.icon = new Image(this.icon);
-		this.images = this.images.map((image) => {
-			return new Image(image);
-		});
+
+		if (this.images) {
+			this.images = this.images.map((image) => new Image(image));	
+		}
 	}
 
 }
