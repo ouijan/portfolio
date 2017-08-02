@@ -1,0 +1,24 @@
+<div layout="column">
+
+	<div layout-padding>
+		<h1 class="md-display-1">Who am I?</h1>
+	</div>
+
+	<div layout="column" layout-gt-xs="row" layout-padding>
+
+		<div flex-gt-xs="50">
+			<p class="md-body-1" ng-repeat="paragraph in vm.paragraphs" 
+				ng-bind="paragraph"></p>
+		</div>
+
+		<div flex-gt-xs="50">
+			<center>
+				<img class="circle" 
+					ng-src="{{ vm.profile.url }}" 
+					alt="{{ vm.profile.name }}">
+				</center>
+		</div>
+
+	</div>
+	
+</div>

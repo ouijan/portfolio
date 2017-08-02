@@ -1,9 +1,9 @@
-$divider-color: rgba(0, 0, 0, .3);
+// $divider-color: rgba(0, 0, 0, .3);
 
 header {
   &.ouijan-header {
     @extend %bg-shards-purple;
-    border-bottom: 1px solid $divider-color;
+    border-bottom: 1px solid $background-fade;
     z-index: 1;
 
     .logo {

@@ -2,8 +2,9 @@
 export default class LayoutController {
   
   /* @ngInject */
-	constructor(Projects) {
-		this.Projects = Projects;
+	constructor(Sidebar, Loader) {
+		this.Sidebar = Sidebar;
+		this.Loader = Loader;
 	}
 
 }

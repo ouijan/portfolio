@@ -10,11 +10,16 @@
 
 ## To Do
 - SSL Certificate
-- Splash section on 'about me'
-- Left Sidebar Service
-- Code Snippets
 - Add more projects
-- Add Loading Icons
+	- Rabbit
+	- Sack of the Gods
+	- OnePanel Checkout
+- Code Snippets
+- Contact
+	- Linked In
+	- Loop
+- Project Display
+	- Tags / Technologies / Skills Involved
 
 ### References
 - [AngularJS](https://angularjs.org/)

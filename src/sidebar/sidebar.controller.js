@@ -3,14 +3,13 @@ import Image from './../images/image';
 export default class SidebarController {
   
   /* @ngInject */
-	constructor(Projects, $state, $mdSidenav) {
+	constructor(Projects, Sidebar, $state) {
 		this.Projects = Projects;
+		this.Sidebar = Sidebar;
 		this.$state = $state;
-		this.$mdSidenav = $mdSidenav;
 
-		this.sidebar = undefined;
 		this.projectList = [];
-		this.aboutImage = new Image('profile.png');
+		this.aboutImage = new Image('profile.jpg');
 		this.logo = new Image('logo.svg');
 
 		this.contact = {
@@ -25,7 +24,6 @@ export default class SidebarController {
 	 */
 	$onInit() {
 		this.loadProjects();
-		this.sidebar = this.$mdSidenav(this.sidebarId, true);	
 	}
 
 	/**
@@ -43,7 +41,7 @@ export default class SidebarController {
 	 * @return {void}
 	 */
 	goTo(state, params = {}) {
-		this.sidebar.close();
+		this.Sidebar.close();
 		this.$state.go(state, params);
 	}
 

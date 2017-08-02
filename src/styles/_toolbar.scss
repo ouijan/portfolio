@@ -5,7 +5,9 @@ md-toolbar {
     h1,
     h2,
     h3 {
+      @extend %pacifico-font;
       text-align: center;
+      color: $white;
     }
 
     .menu-icon {

@@ -1,16 +1,21 @@
 <section layout-fill layout="row" flex>
 
-    <md-sidenav class="md-sidenav-left" md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-sm')"
+    <md-sidenav class="md-sidenav-left" md-component-id="{{ vm.Sidebar.id }}"
+        md-is-locked-open="vm.Sidebar.isLockedOpen()"
         md-whiteframe="4">
-        <ouijan-sidebar sidebar-id="left"></ouijan-sidebar>
+        <ouijan-sidebar></ouijan-sidebar>
     </md-sidenav>
 
     <div layout-fill layout="column">
-        <ouijan-toolbar sidebar-id="left" hide-gt-sm></ouijan-toolbar>
+        <ouijan-toolbar hide-gt-sm></ouijan-toolbar>
 	    <md-content flex>
             <div class="ouijan-content">
-                <div class="wrap">
+                <div ng-if="vm.Loader.shown">
+                    <md-progress-linear md-mode="indeterminate"
+                        class="md-hue-1"></md-progress-linear>
+                </div>
+                <a id="top"></a>
+                <div ng-if="!vm.Loader.shown">
                     <ui-view></ui-view>
                 </div>
             </div>

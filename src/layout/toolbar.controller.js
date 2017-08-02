@@ -3,16 +3,11 @@ import Image from './../images/image';
 export default class ToolbarController {
   
   /* @ngInject */
-	constructor($mdSidenav, $mdMedia) {
+	constructor($mdMedia, Sidebar) {
 		this.$mdMedia = $mdMedia;
-		this.$mdSidenav = $mdSidenav;
+		this.Sidebar = Sidebar;
 
-		this.sidebar = undefined;
 		this.logo = new Image('logo.svg');
-	}
-
-	$onInit() {
-		this.sidebar = this.$mdSidenav(this.sidebarId, true);	
 	}
 
 }

@@ -11,18 +11,20 @@
 }
 
 .md-display-4,
-.md-display-3 {
+.md-display-3,
+.md-display-2,
+.md-display-1 {
   @extend %pacifico-font;
   color: $purple-500;
   font-weight: 400;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
-.md-display-2,
-.md-display-1,
 .md-headline,
 .md-title {
   @extend %source-sans-pro-font;
+  color: $purple-800;
   font-weight: 400;
   margin-bottom: 0;
 }

@@ -9,8 +9,8 @@
   <md-content flex layout="column">
 
       <div class="md-padding job-titles">
-        <h2 class="md-subhead">Digital Design</h2>
         <h2 class="md-subhead">Software Development</h2>
+        <h2 class="md-subhead">Digital Design</h2>
       </div>
 
       <md-list class="md-dense" style="padding: 0;">
@@ -29,6 +29,12 @@
             md-colors="::{backgroundColor: 'default-primary-500'}">
               My Projects
           </md-subheader>
+
+          <div ng-if="!vm.projectList.length" layout-margin
+            layout="column" layout-align="center center">
+            <md-progress-circular md-mode="indeterminate" md-diameter="20"
+              class="md-hue-1"></md-progress-circular>
+          </div>
 
           <md-list-item class="md-2-line" ng-repeat="project in vm.projectList"
             ng-click="vm.goTo('projects', {slug: project.slug})" 
@@ -51,11 +57,6 @@
 
       <footer layout="row" layout-align="center center" class="ouijan-footer">
         <div>
-          <a href="tel:{{ vm.contact.phone }}" class="md-button md-icon-button" 
-            aria-label="Call me maybe">
-            <md-tooltip md-direction="top">Call me maybe {{ vm.contact.phone }}?</md-tooltip>
-            <md-icon>phone</md-icon>
-          </a>
           <a href="mailto:{{ vm.contact.email }}" class="md-button md-icon-button" 
             aria-label="Email me maybe">
             <md-tooltip md-direction="top">{{ vm.contact.email }}</md-tooltip>

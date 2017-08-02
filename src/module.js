@@ -11,10 +11,12 @@ import angularticsGa from 'angulartics-google-analytics';
 import routes from './routes';
 import pallettes from './pallettes';
 import layout from './layout/layout.module';
+import frontpage from './frontpage/frontpage.module';
 import projects from './projects/projects.module';
 import filters from './filters/filters.module';
-import about from './about/about.module';
+import sections from './sections/sections.module';
 import images from './images/images.module';
+import sidebar from './sidebar/sidebar.module';
 
 let app = angular.module('ouijan', [
 	ngMaterial,
@@ -22,10 +24,13 @@ let app = angular.module('ouijan', [
 	uirouter,
 	angulartics,
 	angularticsGa,
+
 	layout,
+	frontpage,
+	sidebar,
 	projects,
 	filters,
-	about,
+	sections,
 	images,
 ]);
 	
@@ -45,7 +50,7 @@ app.config(($mdThemingProvider) => {
 // Configure Routes
 app.config(($stateProvider, $urlRouterProvider) => {
 	routes.forEach((route) => $stateProvider.state(route));
-	$urlRouterProvider.otherwise('/about');
+	$urlRouterProvider.otherwise('/');
 });
 
 export default app.name;

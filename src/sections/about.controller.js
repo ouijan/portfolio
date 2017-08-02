@@ -4,7 +4,7 @@ export default class AboutController {
   
   /* @ngInject */
 	constructor() {
-		this.profile = new Image('profile.png');
+		this.profile = new Image('profile.jpg');
 		this.paragraphs = [
 			`Creative wizard based in Sydney, that’s me! I specialise in Software 
 			Development and web-based technologies but my creativity extends into 

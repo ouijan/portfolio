@@ -1,8 +1,8 @@
 
 let about = {
   name: 'about',
-  url: '/about',
-  component: 'about',
+  url: '/',
+  component: 'frontpage',
 };
 
 let projects = {
@@ -10,8 +10,10 @@ let projects = {
   url: '/projects/:slug',
   component: 'projectDetails',
   resolve: {
-    project: ($stateParams, Projects) => 
-      Projects.get({ slug: $stateParams.slug }).$promise,
+    project: ($stateParams, Projects, Loader, $q) => {
+      let promise = Projects.get({ slug: $stateParams.slug }).$promise;
+      return Loader.showUntil(promise);
+    }
   }
 };
 

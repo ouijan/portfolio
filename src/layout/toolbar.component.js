@@ -5,7 +5,5 @@ export default {
   templateUrl,
   controller,
   controllerAs: 'vm',
-  bindings: {
-  	sidebarId: '@',
-  }
+  bindings: {}
 };
